@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthGuide: Free Health Information</title>
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 10px;
+        }
+        
+        /* Header Styles */
+        header {
+            background: linear-gradient(to right, #2E7D32, #4CAF50);
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        
+        header h1 {
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+        
+        header p {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+        
+        /* Navigation */
+        nav {
+            background-color: #333;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        nav ul li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 12px 16px;
+            text-decoration: none;
+        }
+        
+        nav ul li a:hover {
+            background-color: #4CAF50;
+        }
+        
+        /* Main Content */
+        .main-content {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .section:last-child {
+            border-bottom: none;
+        }
+        
+        .section h2 {
+            color: #2E7D32;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 8px;
+            margin-bottom: 15px;
+        }
+        
+        .article {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-left: 4px solid #4CAF50;
+            border-radius: 3px;
+        }
+        
+        .article h3 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        
+        /* Tips List */
+        .tips-list {
+            padding-left: 20px;
+            margin: 10px 0;
+        }
+        
+        .tips-list li {
+            margin-bottom: 8px;
+        }
+        
+        /* Emergency Section */
+        .emergency {
+            background-color: #ffebee;
+            border: 1px solid #ffcdd2;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        
+        .emergency h2 {
+            color: #c62828;
+            border-bottom: 1px solid #ffcdd2;
+        }
+        
+        /* Health Conditions Table */
+        .conditions-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        
+        .conditions-table th, .conditions-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        
+        .conditions-table th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        
+        .conditions-table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            border-radius: 5px;
+            font-size: 14px;
+            margin-top: 20px;
+        }
+        
+        footer a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+            }
+            
+            nav ul li a {
+                padding: 10px;
+            }
+            
+            .section h2 {
+                font-size: 18px;
+            }
+            
+            .conditions-table {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>HealthGuide: Free Health Information</h1>
+        <p>Essential health knowledge accessible to everyone</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#prevention">Prevention</a></li>
+            <li><a href="#nutrition">Nutrition</a></li>
+            <li><a href="#fitness">Fitness</a></li>
+            <li><a href="#conditions">Health Conditions</a></li>
+            <li><a href="#emergency">Emergency Info</a></li>
+        </ul>
+    </nav>
+    
+    <div class="main-content">
+        <section id="home" class="section">
+            <h2>Welcome to HealthGuide</h2>
+            <p>Your trusted source for free, essential health information. Our content is carefully selected to help you maintain good health and prevent diseases.</p>
+            
+            <div class="article">
+                <h3>Today's Health Tip</h3>
+                <p>Drink at least 8 glasses of water daily to stay hydrated and help your body function properly. Proper hydration improves energy, brain function, and skin health.</p>
+            </div>
+            
+            <div class="article">
+                <h3>Why Preventive Care Matters</h3>
+                <p>Regular health check-ups and early detection of diseases can significantly improve treatment outcomes. Simple preventive measures can avoid up to 80% of heart disease and stroke cases.</p>
+            </div>
+        </section>
+        
+        <section id="prevention" class="section">
+            <h2>Disease Prevention</h2>
+            
+            <div class="article">
+                <h3>Hand Hygiene</h3>
+                <p>Proper handwashing is one of the most effective ways to prevent the spread of infectious diseases.</p>
+                <ul class="tips-list">
+                    <li>Wash hands with soap and clean water for at least 20 seconds</li>
+                    <li>Always wash before eating, after using the toilet, and after coughing/sneezing</li>
+                    <li>Use alcohol-based sanitizer if soap and water aren't available</li>
+                </ul>
+            </div>
+            
+            <div class="article">
+                <h3>Vaccination Schedule</h3>
+                <p>Vaccines protect against serious diseases. Ensure you and your family are up to date with these essential vaccines:</p>
+                <ul class="tips-list">
+                    <li>Measles, Mumps, Rubella (MMR)</li>
+                    <li>Tetanus, Diphtheria, Pertussis</li>
+                    <li>Polio</li>
+                    <li>Hepatitis B</li>
+                    <li>COVID-19 as recommended</li>
+                </ul>
+            </div>
+            
+            <div class="article">
+                <h3>Mosquito-Borne Disease Prevention</h3>
+                <p>Protect yourself from malaria, dengue, and other mosquito-borne illnesses:</p>
+                <ul class="tips-list">
+                    <li>Use insecticide-treated bed nets</li>
+                    <li>Apply mosquito repellent to exposed skin</li>
+                    <li>Wear long-sleeved clothing during peak mosquito hours</li>
+                    <li>Eliminate standing water around your home</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section id="nutrition" class="section">
+            <h2>Nutrition Essentials</h2>
+            
+            <div class="article">
+                <h3>Balanced Diet Basics</h3>
+                <p>A healthy diet includes a variety of foods from all food groups:</p>
+                <ul class="tips-list">
+                    <li><strong>Fruits and vegetables:</strong> At least 5 portions daily</li>
+                    <li><strong>Whole grains:</strong> Brown rice, whole wheat bread, oats</li>
+                    <li><strong>Protein:</strong> Beans, lentils, fish, lean meat, eggs</li>
+                    <li><strong>Dairy:</strong> Milk, yogurt, cheese (or fortified alternatives)</li>
+                    <li><strong>Limit:</strong> Salt, sugar, processed foods, unhealthy fats</li>
+                </ul>
+            </div>
+            
+            <div class="article">
+                <h3>Nutrition for Different Life Stages</h3>
+                <p>Nutritional needs change throughout life:</p>
+                <ul class="tips-list">
+                    <li><strong>Infants:</strong> Exclusive breastfeeding for first 6 months</li>
+                    <li><strong>Children:</strong> Balanced diet for growth and development</li>
+                    <li><strong>Pregnant women:</strong> Additional iron, folic acid, and calories</li>
+                    <li><strong>Elderly:</strong> Calcium, vitamin D, and protein to maintain health</li>
+                </ul>
+            </div>
+            
+            <div class="article">
+                <h3>Food Safety Practices</h3>
+                <p>Prevent foodborne illnesses with proper food handling:</p>
+                <ul class="tips-list">
+                    <li>Keep raw and cooked foods separate</li>
+                    <li>Cook foods thoroughly, especially meat and poultry</li>
+                    <li>Store food at proper temperatures</li>
+                    <li>Use safe water and raw materials</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section id="fitness" class="section">
+            <h2>Physical Activity & Fitness</h2>
+            
+            <div class="article">
+                <h3>Exercise Recommendations</h3>
+                <p>The World Health Organization recommends:</p>
+                <ul class="tips-list">
+                    <li><strong>Adults (18-64):</strong> At least 150 minutes of moderate-intensity or 75 minutes of vigorous-intensity activity per week</li>
+                    <li><strong>Children and adolescents:</strong> At least 60 minutes of moderate-to-vigorous activity daily</li>
+                    <li>Include muscle-strengthening activities 2+ days per week</li>
+                </ul>
+            </div>
+            
+            <div class="article">
+                <h3>Simple Exercises You Can Do Anywhere</h3>
+                <p>No equipment needed:</p>
+                <ul class="tips-list">
+                    <li>Walking or jogging in place</li>
+                    <li>Bodyweight squats and lunges</li>
+                    <li>Push-ups (against wall or on knees if needed)</li>
+                    <li>Jumping jacks</li>
+                    <li>Stretching exercises</li>
+                </ul>
+            </div>
+            
+            <div class="article">
+                <h3>Benefits of Regular Activity</h3>
+                <p>Regular physical activity can:</p>
+                <ul class="tips-list">
+                    <li>Reduce risk of heart disease, stroke, and diabetes</li>
+                    <li>Help maintain healthy weight</li>
+                    <li>Improve mental health and mood</li>
+                    <li>Strengthen bones and muscles</li>
+                    <li>Improve sleep quality</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section id="conditions" class="section">
+            <h2>Common Health Conditions</h2>
+            
+            <table class="conditions-table">
+                <tr>
+                    <th>Condition</th>
+                    <th>Symptoms</th>
+                    <th>Prevention</th>
+                </tr>
+                <tr>
+                    <td>Hypertension (High Blood Pressure)</td>
+                    <td>Often no symptoms, sometimes headache, dizziness</td>
+                    <td>Reduce salt, exercise regularly, maintain healthy weight</td>
+                </tr>
+                <tr>
+                    <td>Diabetes</td>
+                    <td>Frequent urination, increased thirst, fatigue</td>
+                    <td>Healthy diet, regular exercise, maintain healthy weight</td>
+                </tr>
+                <tr>
+                    <td>Malaria</td>
+                    <td>Fever, chills, headache, muscle pains</td>
+                    <td>Use mosquito nets, repellents, eliminate breeding sites</td>
+                </tr>
+                <tr>
+                    <td>Respiratory Infections</td>
+                    <td>Cough, fever, difficulty breathing</td>
+                    <td>Hand hygiene, avoid sick people, vaccination</td>
+                </tr>
+                <tr>
+                    <td>Diarrheal Diseases</td>
+                    <td>Loose stools, dehydration, stomach cramps</td>
+                    <td>Safe water, proper sanitation, handwashing</td>
+                </tr>
+            </table>
+            
+            <div class="article">
+                <h3>When to Seek Medical Attention</h3>
+                <p>Consult a healthcare provider if you experience:</p>
+                <ul class="tips-list">
+                    <li>High fever that doesn't improve</li>
+                    <li>Difficulty breathing</li>
+                    <li>Severe pain anywhere in the body</li>
+                    <li>Unexplained weight loss</li>
+                    <li>Symptoms that persist or worsen</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section id="emergency" class="section">
+            <h2>Emergency Health Information</h2>
+            
+            <div class="emergency">
+                <h2>First Aid Basics</h2>
+                
+                <div class="article">
+                    <h3>Bleeding</h3>
+                    <ul class="tips-list">
+                        <li>Apply direct pressure with clean cloth</li>
+                        <li>Elevate injured area if possible</li>
+                        <li>Seek medical help for serious wounds</li>
+                    </ul>
+                </div>
+                
+                <div class="article">
+                    <h3>Burns</h3>
+                    <ul class="tips-list">
+                        <li>Cool with running water for 10-20 minutes</li>
+                        <li>Cover with clean cloth</li>
+                        <li>Do not apply butter or ointments</li>
+                    </ul>
+                </div>
+                
+                <div class="article">
+                    <h3>CPR (Cardiopulmonary Resuscitation)</h3>
+                    <ul class="tips-list">
+                        <li>Call for emergency help first</li>
+                        <li>Push hard and fast in center of chest</li>
+                        <li>Rate: 100-120 compressions per minute</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="article">
+                <h3>Emergency Preparedness</h3>
+                <p>Be ready for health emergencies:</p>
+                <ul class="tips-list">
+                    <li>Know location of nearest health facility</li>
+                    <li>Keep emergency contact numbers accessible</li>
+                    <li>Maintain basic first aid supplies</li>
+                    <li>Have a plan for accessing emergency care</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <p>HealthGuide - Free Health Information for Everyone</p>
+        <p>This service is optimized for Free Basics with no data charges</p>
+        <p>Note: This information is for educational purposes only. Consult a healthcare professional for medical advice.</p>
+    </footer>
+</body>
+</html>
